@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help &amp; Feedback 💬"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Need help using the Mood Journal app?
+
+Tracking Mood
+Select your mood from the mood tracker to record how you feel.
+
+Writing Journals
+Use the journal section to write your thoughts and reflections.
+
+Viewing History
+You can review previous moods and journal entries from the history sections.
+
+Feedback
+If you have suggestions or encounter any issues, feel free to contact us.
+
+Email:
+support@moodjournal.app" />
+
+    </LinearLayout>
+
+</ScrollView>

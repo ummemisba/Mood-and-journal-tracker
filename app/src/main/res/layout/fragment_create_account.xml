@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Title -->
+
+    <TextView
+        android:id="@+id/createTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tell me about you 👀"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#2E2E2E"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <!-- Name -->
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:hint="Your name ✨"
+        android:background="@drawable/input_bg"
+        android:padding="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toBottomOf="@id/createTitle"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <!-- Username -->
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:hint="Create username 👤"
+        android:background="@drawable/input_bg"
+        android:padding="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toBottomOf="@id/nameInput"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <!-- Password -->
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:hint="Create password 🔒"
+        android:inputType="textPassword"
+        android:background="@drawable/input_bg"
+        android:padding="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toBottomOf="@id/usernameInput"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <!-- Confirm Password -->
+
+    <EditText
+        android:id="@+id/confirmPasswordInput"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:hint="Confirm password 🔐"
+        android:inputType="textPassword"
+        android:background="@drawable/input_bg"
+        android:padding="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toBottomOf="@id/passwordInput"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <!-- Avatar Title -->
+
+    <TextView
+        android:id="@+id/avatarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your avatar 👤"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/confirmPasswordInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <!-- Avatar Options -->
+
+    <RadioGroup
+        android:id="@+id/avatarGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/avatarTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/avatar1"
+            android:text="🙂"
+            android:textSize="26sp"
+            android:layout_margin="10dp"/>
+
+        <RadioButton
+            android:id="@+id/avatar2"
+            android:text="😎"
+            android:textSize="26sp"
+            android:layout_margin="10dp"/>
+
+        <RadioButton
+            android:id="@+id/avatar3"
+            android:text="🧑‍🎓"
+            android:textSize="26sp"
+            android:layout_margin="10dp"/>
+
+        <RadioButton
+            android:id="@+id/avatar4"
+            android:text="👩‍💻"
+            android:textSize="26sp"
+            android:layout_margin="10dp"/>
+
+    </RadioGroup>
+
+
+    <!-- Continue Button -->
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:text="Continue 💫"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_bg"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/avatarGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back"/>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms &amp; Conditions"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Content -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="By using the Mood Journal App, you agree to the following terms.
+
+Usage
+This application is designed to help users track moods and write personal journal entries.
+
+User Responsibility
+Users are responsible for keeping their account password secure and private.
+
+Data Storage
+All journal entries, mood data, and personal details are stored locally on your device. The application does not upload or share your data online.
+
+Appropriate Use
+The app should only be used for personal wellbeing and reflection purposes.
+
+Updates
+The application may receive updates and improvements in the future to enhance the user experience.
+
+Acceptance
+By continuing to use the app, you accept these terms and conditions." />
+
+    </LinearLayout>
+
+</ScrollView>

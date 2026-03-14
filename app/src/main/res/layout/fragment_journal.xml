@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back"
+            android:backgroundTint="#B0BEC5"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Title -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write Your Journal ✍️"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- Journal Writing Box -->
+
+        <EditText
+            android:id="@+id/journalInput"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="Write your thoughts here..."
+            android:background="#FFFFFF"
+            android:padding="15dp"
+            android:gravity="top"
+            android:textSize="16sp"
+            android:inputType="textMultiLine"
+            android:autofillHints="none"
+            android:layout_marginBottom="20dp"/>
+        <!-- Mood Dropdown -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Mood"
+            android:textSize="16sp"
+            android:layout_marginBottom="6dp"/>
+
+        <Spinner
+            android:id="@+id/moodDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- Tip Section -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8DDF1"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tipTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tip 💡"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tipText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write something to get a helpful tip"
+                android:layout_marginTop="6dp"/>
+
+        </LinearLayout>
+
+
+        <!-- Save Button -->
+
+        <Button
+            android:id="@+id/saveJournalButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Save Entry"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:background="@drawable/button_bg"
+            android:layout_marginBottom="12dp"/>
+
+
+        <!-- Clear Button -->
+
+        <Button
+            android:id="@+id/clearJournalButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Clear Entry"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#B0BEC5"/>
+
+    </LinearLayout>
+
+</ScrollView>

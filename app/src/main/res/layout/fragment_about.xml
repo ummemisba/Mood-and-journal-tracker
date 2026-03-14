@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Mood Journal"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:text="Mood Journal is a personal wellbeing app designed to help users understand their emotions.
+
+The app allows you to:
+• Track daily moods
+• Write personal journal entries
+• View mood history and insights
+• Customize themes and appearance
+• Create a personalized profile with avatar
+
+This application encourages self-reflection and emotional awareness.
+
+Version
+Mood Journal App v1.0
+
+Developed as an Android project using Android Studio." />
+
+    </LinearLayout>
+
+</ScrollView>

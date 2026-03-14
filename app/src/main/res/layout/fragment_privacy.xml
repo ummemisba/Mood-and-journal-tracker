@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:text="Your privacy is important to us.
+
+The Mood Journal App is designed to help users track moods and write personal journal entries.
+
+Data Storage
+All data including journal entries, mood records, and profile information are stored locally on your device.
+
+Personal Information
+The app only stores the information you provide such as name, username, and avatar to personalize your experience.
+
+Security
+Your data remains on your device and is protected by the password you set during account creation.
+
+Third-Party Access
+The Mood Journal App does not share your personal data with any third-party services.
+
+Policy Updates
+This privacy policy may be updated in future versions of the app." />
+
+    </LinearLayout>
+
+</ScrollView>
